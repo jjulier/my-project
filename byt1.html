@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="website.css"/>
+		<title>Eleanor Davies</title>
+		<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+	</head>	
+	<body>
+<div id="menu">
+				<ul>
+					<li><h3><a href="index.html">E L E A N O R <br> D A V I E S</a></h3></li><br><br>
+
+					<li><h4>Art</h4></li>
+					<li><a href="200colours.html">Over 200 Beautiful Colours</a></li>
+					<li><a href="gbfseries.html">G.B.F Series</a></li>
+					<li><a href="novisiblestreaks.html">No Visible Streaks</a></li>
+					<li><a href="titillation.html">Titillation Installation</a></li>
+					<li><a href="bff.html">b.f.f.w.l.t.g.s.a.l</a></li><br>
+
+
+					<li><h4>Curation</h4></li>
+					<li><a href="youarehere.html">You Are Here</a></li>
+					<li><a href="yinh.html">Yesterday is Now History</a></li><br>
+
+					<li><h4>Sets + Windows</h4></li>
+					<li><a href="byt.html">Bright Young Things</a></li>
+					<li><a href="workhomeout.html">Work Home Out</a></li>
+					<li><a href="camdencreate.html">Camden Create</a></li>	
+					<li><a href="streatham.html">Streatham Pink</a></li><br>
+
+					<li><h4>Still life</h4></li>
+					<li><a href="sci-fi-senses.html">Sci-fi Senses</a></li>
+					<li><a href="stationery.html">Stationary Stationery</a></li>
+					<li><a href="party.html">Party ~ Party</a></li>
+					<li><a href="wiggle.html">The Wiggle</a></li><br>
+					
+					<li><h4>Info</h4></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="onlineshop.html">Online Shop</a></li><br>
+
+				</ul>
+			</div>
+
+			
+			<div class="slider">
+  			<ul>
+    			<li><img src="img/byt/byt1.jpg"></li>
+    			<li><img src="img/byt/byt5.jpg"></li>
+    			<li><img src="img/byt/byt8.jpg"></li>
+    			<li><img src="img/byt/byt10.jpg"></li>
+  			</ul>
+			</div>
+
+			<div id="content">
+				<img src="img/byt/byttest.jpg" alt="byt" style="height:auto;width:1000px"><br><br>
+				<strong>Selfridges' Bright Young Things, October 2013</strong><br><br>
+   					In 2013 I was invited to participate in Selfridges' Bright Young Things scheme. This involved creating and installing a window display for the department store and designing a t-shirt and range of products to be sold in the Concept Store. I titled my installation <i>Soft Core Shopping</i>, to highlight the pornographic quality of shopping displays - the perfection, seamless smooth shapes, and glossy surfaces, but also the grubbiness too - the settled dust and sellotaped edges. This project was sponsored by <a href="http://www.lurex.com">The Lurex' Company Limited</a>. Photography by <a href="http://www.nassimarothacker.com">Nassima Rothacker</a>.<br><br>
+   					<a href="https://www.youtube.com/watch?v=re0WZ1miLb0">Watch a short video about the project</a><br><br><br>
+   				<img src="img/byt/byt1.jpg" alt="byt" style="height:auto;width:1000px"><br><br>
+   				<img src="img/byt/byt5.jpg" alt="byt" style="height:auto;width:1000px"><br><br>
+   				<img src="img/byt/byt8.jpg" alt="byt" style="height:auto;width:1000px"><br><br>
+   				
+   				<img src="img/byt/byt10.jpg" alt="byt" style="height:auto;width:1000px"><br><br>
+   				<img src="img/byt/byt7.jpg" alt="byt" style="height:auto;width:1000px"><br><br>
+			</div>
+	
+			<script>
+			 var Slider = function() { this.initialize.apply(this, arguments) }
+  Slider.prototype = {
+ 
+    initialize: function(slider) {
+      this.ul = slider.children[0]
+      this.li = this.ul.children
+ 
+      // make <ul> as large as all <li>’s
+      this.ul.style.width = (this.li[0].clientWidth * this.li.length) + 'px'
+ 
+      this.currentIndex = 0
+    },
+ 
+    goTo: function(index) {
+      // filter invalid indices
+      if (index < 0 || index > this.li.length - 1)
+        return
+ 
+      // move <ul> left
+      this.ul.style.left = '-' + (100 * index) + '%'
+ 
+      this.currentIndex = index
+    },
+ 
+    goToPrev: function() {
+      this.goTo(this.currentIndex - 1)
+    },
+ 
+    goToNext: function() {
+      this.goTo(this.currentIndex + 1)
+    }
+  }
+  </script>
+	</body>
+	</html>
